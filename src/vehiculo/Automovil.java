@@ -41,11 +41,7 @@ public class Automovil extends Vehiculo {
       }else {
           System.out.println("No puede cargar mas gasolina  ");
       }
-     
-     
-    
-     
-     
+
  }
 
   @Override  
