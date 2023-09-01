@@ -32,14 +32,30 @@ public class Automovil extends Vehiculo {
      @Override
  public void CargarEstanque(int litros){
      if (litros < 0) {
+         
          System.out.println("El nivel del estanque es insuficiente cargar mas gasolina ");
      }
-     if (getNivelEstanque() + litros > getCapacidadEstanque()){
+     if (getNivelEstanque() + litros >= getCapacidadEstanque()){
           
           System.out.println("No puede cargar mas gasolina ");
       }else {
           System.out.println("No puede cargar mas gasolina  ");
       }
+     
+     
+    
+     
+     
+ }
+
+  @Override  
+ public void VaciarEstanqueo(int litros){
+     
+     if (getNivelEstanque() <=15){
+         System.out.println("El vehiculo no puede tener un nivel de estanque menor a 15");
+     }   
+     
+     
       
       
       
