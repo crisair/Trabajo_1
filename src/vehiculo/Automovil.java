@@ -10,6 +10,11 @@ public class Automovil extends Vehiculo {
     public Automovil(int cantidadPuertas, String marca, int año, double precio, int capacidadEstanque, int nivelEstanque) {
         super(marca, año, precio, capacidadEstanque, nivelEstanque);
         this.cantidadPuertas = cantidadPuertas;
+        if (cantidadPuertas %2 ==0){
+             System.out.println(" la cantidad de puertas debe se par");
+        }else{
+             
+        }
     }
     
     public Automovil(){
@@ -29,12 +34,22 @@ public class Automovil extends Vehiculo {
      if (litros < 0) {
          System.out.println("El nivel del estanque es insuficiente cargar mas gasolina ");
      }
-      if (getNivelEstanque() + litros > getCapacidadEstanque()){
+     if (getNivelEstanque() + litros > getCapacidadEstanque()){
           
           System.out.println("No puede cargar mas gasolina ");
+      }else {
+          System.out.println("No puede cargar mas gasolina  ");
       }
+      
+      
+      
+      
      
-     super.CargarEstanque(litros);  
+     
+      
+      
+      
+      
  }
         
             
