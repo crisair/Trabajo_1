@@ -64,7 +64,7 @@ public class Vehiculo {
     
     
     public void  ImprimirDatos(){
-        System.out.println("la maraca del auto es :"+ this.marca);
+        System.out.println("la marca del auto es :"+ this.marca);
         System.out.println("El año es :"+ this.año);
         System.out.println("El precio del auto es :"+ this.precio);
         System.out.println("La capacidad del auto es  :"+ this.capacidadEstanque);
@@ -98,6 +98,8 @@ public class Vehiculo {
         double impuestos ;
         
     impuestos  = this.precio * 0.015 ;
+    
+    System.out.println("Su impuesto es $"+ impuestos);
         
     } 
     

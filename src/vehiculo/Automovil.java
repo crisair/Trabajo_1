@@ -52,18 +52,29 @@ public class Automovil extends Vehiculo {
      }   
      
      
-      
-      
-      
-      
-     
-     
-      
-      
-      
-      
  }
-        
-            
+ 
+  public void calcularImpuesto(){
+     
+  if (getAño() < 2010){
+      
+      System.out.println(" usted no paga impuestos");
+  } else {
+      
+      super.calcularImpuesto();
+  }
+  
+ } 
+  
+
+     
+public void ModificarAño(int nuevoAño) {
     
+        setAño(nuevoAño);
+       
+}
+      
+     
+    
+            
 }
